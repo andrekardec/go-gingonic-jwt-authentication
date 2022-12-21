@@ -1,7 +1,5 @@
-[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/andrekardec/go-gingonic-jwt-authentication/blob/main/LICENSE.md)
-
-<a href="https://www.linkedin.com/in/andrekardec/">
-   <img src="http://img.shields.io/badge/author-@andrekardec-blue.svg?style=flat-square">
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/andrekardec/go-gingonic-jwt-authentication/blob/main/LICENSE.md)<a href="https://www.linkedin.com/in/andrekardec/">
+<img src="http://img.shields.io/badge/author-@andrekardec-blue.svg?style=flat-square">
 </a>
 
 # Go Gin Gonic JWT Authentication API
