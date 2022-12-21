@@ -13,8 +13,8 @@ stop:
 down:
 	docker-compose -f docker-compose.yml down
 
-migrate-up:
-	migrate --path src/migrations -database "postgresql://postgres:Password!123#@localhost:5432?sslmode=disable" -verbose up
+migration-up:
+	migrate --path src/shared/providers/storage/migrations -database "postgresql://postgres:Password!@123@localhost:5432?sslmode=disable" -verbose up
 
-migrate-down:
-	migrate --path src/migrations -database "postgresql://postgres:Password!123#@localhost:5432?sslmode=disable" -verbose down
+migration-down:
+	migrate --path src/shared/providers/storage/migrations -database "postgresql://postgres:Password!@123@localhost:5432?sslmode=disable" -verbose down
