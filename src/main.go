@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/andrekardec/go-gingonic-jwt-authentication/src/modules/user"
 	pgKit "github.com/andrekardec/go-gingonic-jwt-authentication/src/shared/providers/storage/pgsql"
 	"github.com/andrekardec/go-gingonic-jwt-authentication/src/shared/router"
@@ -13,7 +14,7 @@ import (
 
 var cfg struct {
 	DBUser string `envconfig:"DB_USER" default:"postgres"`
-	DBPass string `envconfig:"DB_PASS" default:"Password!123#"`
+	DBPass string `envconfig:"DB_PASS" default:"Password!@123"`
 	DBName string `envconfig:"DB_NAME" default:"postgres"`
 	DBHost string `envconfig:"DB_HOST" default:"localhost"`
 	DBPort int    `envconfig:"DB_PORT" default:"5432"`
