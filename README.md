@@ -6,7 +6,7 @@
 
 [UNDER CONSTRUCTION]
 
-This API provides an Identity Access Management with JWT powered by Gin Gonic.
+This API provides an Identity Access Management with JWT built with GoLang powered by Gin Gonic.
 
 ## Table of Contents
 
@@ -38,11 +38,11 @@ This API provides an Identity Access Management with JWT powered by Gin Gonic.
 
 Windows
 
-Go to your Power Shell terminal with administrative privileges, then run `choco install make`. You should have make ready to use.
+Go to your PowerShell terminal with administrative privileges, then run `choco install make`. You should have it ready to use.
 
 Linux
 
-Make comes in default in most of Linux Distributions, so you should verify if it is already installed before considering installing it. You can verify it typing the below mentioned command in the terminal.
+Make comes in default in most Linux Distributions, so you should verify if it is already installed before considering installing it. You can verify it by typing the below mentioned command in the terminal.
 
 ```shell
 make -version
@@ -60,7 +60,13 @@ MacOS
 
 ## Running
 
-TL;DR: To run the application you just need to run the below mentioned command in the root folder of your project. But, to make everything workout in the expected way, make sure you have all the dependencies listed before and that the next steps of the running section were fulfilled.
+TL;DR: To run the application you just need to run the below mentioned command in the root folder of your project. But, to make everything workout in the expected way, make sure you have all the dependencies listed before and that the next steps of the running section are fulfilled.
+
+```shell
+air
+```
+
+To stop it, type ctrl + c in your terminal.
 
 ### Environment Variables
 
@@ -88,13 +94,23 @@ variable: `unset [ENV_NAME]`.
 
 ### Docker
 
-This API uses Docker to provider the PostgreSQL database. With you Docker open and running, run the below mentioned command in the terminal and you're ready to go.
+This API uses Docker to provide the PostgreSQL database. With your Docker open and running, run the below mentioned command in the terminal and you're ready to go.
 
 ```shell
 make run
 ```
 
 ### Migrations
+
+To run the migrations up or down use one of the below mentioned commands in the terminal.
+
+```shell
+make migration-up
+```
+
+```shell
+make migration-down
+```
 
 ## Sonarqube
 
